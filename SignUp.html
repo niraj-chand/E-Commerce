@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skibidi - Sign Up</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo">Skibidi</h1>
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('signup-form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const fullName = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('signup-password').value;
+
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^[0-9]{10}$/;
+
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            if (!phonePattern.test(phone)) {
+                alert('Please enter a valid 10-digit phone number.');
+                return;
+            }
+
+
+            localStorage.setItem('fullName', fullName);
+            localStorage.setItem('email', email);
+            localStorage.setItem('phone', phone);
+            localStorage.setItem('password', btoa(password));
+
+            alert('Account created successfully! Redirecting to login page.');
+            window.location.href = 'logInPage.html';
+        });
+    </script>
+</body>
+
+</html>
