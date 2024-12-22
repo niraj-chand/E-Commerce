@@ -1,0 +1,89 @@
+/* Main Section */
+
+main {
+    padding: 20px;
+}
+
+#contact-us {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#contact-us p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+/* Contact Details */
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.contact-details .detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.contact-details i {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+
+/* Contact Form */
+
+#contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
