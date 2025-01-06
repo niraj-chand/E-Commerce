@@ -5,8 +5,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: white;
+    background: #E3E5F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
@@ -43,4 +47,35 @@
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+
+/* Home page */
+
+#hero {
+    background-image: url(/Images/background_image.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: rgb(55, 189, 166);
+}
+
+#hero button {
+    background-image: url(/Images/button.png);
+    background-color: transparent;
+    color: rgb(55, 189, 166);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
 }
