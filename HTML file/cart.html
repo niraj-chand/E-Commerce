@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cart | E-COMMERCE WEBSITE BY EDYODA </title>
+    <link rel="stylesheet" href="css/cart.css">
+
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS file/index.css">
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="3"><img src="/Images/Sikibidi Logo2.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a> </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- CART CONTAINER -->
+    <div id="cartMainContainer">
+        <h1> Checkout </h1>
+        <h3 id="totalItem"> Total Items: 0 </h3>
+
+        <div id="cartContainer">
+            <!-- JS rendered code -->
+        </div>
+
+    </div>
+
+</body>
+<!-- FOOTER -->
+<div id="4"></div>
+<script>
+    load("footer.html");
+
+    function load(url) {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
+<script src="/cart.js"></script>
+
+</html>

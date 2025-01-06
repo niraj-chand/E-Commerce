@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skibidi - Sign Up</title>
-    <link rel="stylesheet" href="SignUp.css">
+    <link rel="stylesheet" href="/CSS file/SignUp.css">
 </head>
 
 <body>
@@ -26,6 +26,9 @@
                 <label for="signup-password">Password</label>
                 <input type="password" id="signup-password" name="password" required>
 
+                <label for="Signup-conformPassword">Conform Password</label>
+                <input type="password" name="Conform Password" id="Signup-conformPassword">
+
                 <button type="submit" class="signup-button">Sign Up</button>
             </form>
         </div>
@@ -41,6 +44,7 @@
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const password = document.getElementById('signup-password').value;
+
 
 
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
