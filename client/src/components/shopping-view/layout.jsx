@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import ShoppingHeader from "./header";
-//how is this working bro
+
 function ShoppingLayout() {
   return (
     <div className="flex flex-col bg-white overflow-hidden">
