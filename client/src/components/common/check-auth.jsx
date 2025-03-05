@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from "react-router-dom";
-//wow 
+
 function CheckAuth({ isAuthenticated, user, children }) {
   const location = useLocation();
 
