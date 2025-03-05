@@ -140,5 +140,5 @@ function AdminOrderDetailsView({ orderDetails }) {
     </DialogContent>
   );
 }
-//export deko theana bug fix vo hola
+
 export default AdminOrderDetailsView;
