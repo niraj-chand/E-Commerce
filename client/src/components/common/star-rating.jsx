@@ -23,5 +23,5 @@ function StarRatingComponent({ rating, handleRatingChange }) {
     </Button>
   ));
 }
-
+//export added again
 export default StarRatingComponent;
