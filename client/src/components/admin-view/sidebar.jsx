@@ -82,5 +82,5 @@ function AdminSideBar({ open, setOpen }) {
     </Fragment>
   );
 }
-//wow
+
 export default AdminSideBar;
