@@ -73,7 +73,7 @@ function Address({ setCurrentSelectedAddress, selectedId }) {
           }
         });
   }
-
+//added handle delete address
   function handleDeleteAddress(getCurrentAddress) {
     dispatch(
       deleteAddress({ userId: user?.id, addressId: getCurrentAddress._id })
