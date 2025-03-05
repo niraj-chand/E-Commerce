@@ -43,7 +43,7 @@ const DialogContent = React.forwardRef(({ className, children, ...props }, ref) 
   </DialogPortal>
 ))
 DialogContent.displayName = DialogPrimitive.Content.displayName
-//dialog content
+
 const DialogHeader = ({
   className,
   ...props
