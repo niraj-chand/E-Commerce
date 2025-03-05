@@ -82,5 +82,5 @@ function ShoppingOrderDetailsView({ orderDetails }) {
     </DialogContent>
   );
 }
-//maximum effort
+
 export default ShoppingOrderDetailsView;
