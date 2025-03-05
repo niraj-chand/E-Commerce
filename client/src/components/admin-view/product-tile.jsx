@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter } from "../ui/card";
-//function for AdminProducts
+
 function AdminProductTile({
   product,
   setFormData,
