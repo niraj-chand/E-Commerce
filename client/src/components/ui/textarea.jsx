@@ -14,5 +14,5 @@ const Textarea = React.forwardRef(({ className, ...props }, ref) => {
   );
 })
 Textarea.displayName = "Textarea"
-//syntax buff
+
 export { Textarea }
