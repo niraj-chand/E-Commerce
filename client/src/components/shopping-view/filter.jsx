@@ -39,5 +39,5 @@ function ProductFilter({ filters, handleFilter }) {
     </div>
   );
 }
-//filter
+
 export default ProductFilter;
