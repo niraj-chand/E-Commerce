@@ -1,7 +1,7 @@
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import { Label } from "../ui/label";
-
+//function added for addresscard
 function AddressCard({
   addressInfo,
   handleDeleteAddress,
