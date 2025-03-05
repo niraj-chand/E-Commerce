@@ -20,14 +20,13 @@ export const registerFormControls = [
     componentType: "input",
     type: "password",
   },
-
   {
     name: "confirmPassword",
-  label: "Confirm Password",  // New confirm password field
-  type: "password",
-  placeholder: "Confirm your password",
-  type: "password"
-},
+    label: "Confirm Password",
+    placeholder: "Confirm your password",
+    componentType: "input",
+    type: "password",
+  },
 ];
 
 export const loginFormControls = [
@@ -69,8 +68,8 @@ export const addProductFormElements = [
       { id: "men", label: "Men" },
       { id: "women", label: "Women" },
       { id: "kids", label: "Kids" },
-      { id: "gadgets", label: "Gadgets" },
-      { id: "footwear", label: "Footwear" },
+      { id: "accessories", label: "Accessories" },
+      { id: "merchandise", label: "Merchandise" },
     ],
   },
   {
@@ -78,12 +77,12 @@ export const addProductFormElements = [
     name: "brand",
     componentType: "select",
     options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
       { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "adidas", label: "Adidas" },
+      { id: "chanel", label: "Chanel" },
+      { id: "nike", label: "Nike" },
+      { id: "gucchi", label: "Gucchi" },
+      { id: "LV", label: "Louis-Vuittion" },
     ],
   },
   {
@@ -110,63 +109,31 @@ export const addProductFormElements = [
 ];
 
 export const shoppingViewHeaderMenuItems = [
-  {
-    id: "home",
-    label: "Home",
-    path: "/shop/home",
-  },
-  {
-    id: "products",
-    label: "Products",
-    path: "/shop/listing",
-  },
-  {
-    id: "men",
-    label: "Men",
-    path: "/shop/listing",
-  },
-  {
-    id: "women",
-    label: "Women",
-    path: "/shop/listing",
-  },
-  {
-    id: "kids",
-    label: "Kids",
-    path: "/shop/listing",
-  },
-  {
-    id: "footwear",
-    label: "Footwear",
-    path: "/shop/listing",
-  },
-  {
-    id: "gadgets",
-    label: "Gadgets",
-    path: "/shop/listing",
-  },
-  {
-    id: "search",
-    label: "Search",
-    path: "/shop/search",
-  },
+  { id: "home", label: "Home", path: "/shop/home" },
+  { id: "products", label: "Products", path: "/shop/listing" },
+  { id: "men", label: "Men", path: "/shop/listing" },
+  { id: "women", label: "Women", path: "/shop/listing" },
+  { id: "kids", label: "Kids", path: "/shop/listing" },
+  { id: "merchandise", label: "Merchandise", path: "/shop/listing" },
+  { id: "accessories", label: "Accessories", path: "/shop/listing" },
+  { id: "search", label: "Search", path: "/shop/search" },
 ];
 
 export const categoryOptionsMap = {
   men: "Men",
   women: "Women",
   kids: "Kids",
-  gadgets: "Gadgets",
-  footwear: "Footwear",
+  accessories: "Accessories",
+  merchandise: "Merchandise",
 };
 
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
   zara: "Zara",
-  "h&m": "H&M",
+  adidas: "Adidas",
+  chanel: "Chanel",
+  nike: "Nike",
+  gucchi: "Gucchi",
+  LV: "Louis-Vuittion",
 };
 
 export const filterOptions = {
@@ -174,16 +141,16 @@ export const filterOptions = {
     { id: "men", label: "Men" },
     { id: "women", label: "Women" },
     { id: "kids", label: "Kids" },
-    { id: "gadgets", label: "Gadgets" },
-    { id: "footwear", label: "Footwear" },
+    { id: "accessories", label: "Accessories" },
+    { id: "merchandise", label: "Merchandise" },
   ],
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
     { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "adidas", label: "Adidas" },
+    { id: "chanel", label: "Chanel" },
+    { id: "nike", label: "Nike" },
+    { id: "gucchi", label: "Gucchi" },
+    { id: "LV", label: "Louis-Vuittion" },
   ],
 };
 
