@@ -28,5 +28,5 @@ function AdminHeader({ setOpen }) {
     </header>
   );
 }
-
+//export halna birsekeko
 export default AdminHeader;
